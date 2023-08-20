@@ -12,8 +12,9 @@
     "build-storybook": "storybook build",
     "preinstall": "typesync || :",
     "prepare": "husky install",
-    "git-hooks:pre-commit": "lint-staged --allow-empty && tsc --noEmit",
-    "git-hooks:pre-push": "next build"
+    "git-hooks:pre-commit": "lint-staged --allow-empty --config .lintstagedrc.js && tsc --noEmit",
+    "git-hooks:pre-push": "next build",
+    "amplify:ChatGptApiFunction": "cd amplify/backend/function/ChatGptApiFunction/ && npm run build"
   },
   "lint-staged": {
     "./src/**/*.{ts,js,jsx,tsx}": [

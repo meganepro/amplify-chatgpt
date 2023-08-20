@@ -1,0 +1,68 @@
+{
+  "api": {
+    "ChatGptApi": {
+      "dependsOn": [
+        {
+          "attributes": [
+            "Name",
+            "Arn"
+          ],
+          "category": "function",
+          "resourceName": "ChatGptApiFunction"
+        }
+      ],
+      "providerPlugin": "awscloudformation",
+      "service": "API Gateway"
+    }
+  },
+  "function": {
+    "ChatGptApiFunction": {
+      "build": true,
+      "dependsOn": [],
+      "providerPlugin": "awscloudformation",
+      "service": "Lambda"
+    }
+  },
+  "parameters": {
+    "AMPLIFY_function_ChatGptApiFunction_channelAccessToken": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "ChatGptApiFunction"
+        }
+      ]
+    },
+    "AMPLIFY_function_ChatGptApiFunction_channelSecret": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "ChatGptApiFunction"
+        }
+      ]
+    },
+    "AMPLIFY_function_ChatGptApiFunction_deploymentBucketName": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "ChatGptApiFunction"
+        }
+      ]
+    },
+    "AMPLIFY_function_ChatGptApiFunction_openaiApiKey": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "ChatGptApiFunction"
+        }
+      ]
+    },
+    "AMPLIFY_function_ChatGptApiFunction_s3Key": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "ChatGptApiFunction"
+        }
+      ]
+    }
+  }
+}

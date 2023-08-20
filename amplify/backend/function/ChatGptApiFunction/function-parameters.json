@@ -1,0 +1,17 @@
+{
+  "lambdaLayers": [],
+  "environmentVariableList": [
+    {
+      "cloudFormationParameterName": "channelAccessToken",
+      "environmentVariableName": "CHANNEL_ACCESS_TOKEN"
+    },
+    {
+      "cloudFormationParameterName": "channelSecret",
+      "environmentVariableName": "CHANNEL_SECRET"
+    },
+    {
+      "cloudFormationParameterName": "openaiApiKey",
+      "environmentVariableName": "OPENAI_API_KEY"
+    }
+  ]
+}

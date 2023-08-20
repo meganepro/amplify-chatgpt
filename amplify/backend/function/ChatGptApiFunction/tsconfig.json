@@ -1,0 +1,22 @@
+{
+  "compilerOptions": {
+    "target": "es2020",
+    "strict": true,
+    "preserveConstEnums": true,
+    "noEmit": false,
+    "sourceMap": false,
+    "module":"commonjs",
+    "moduleResolution":"node",
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true,
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "outDir": "./src",
+    "allowJs": true,
+    "lib": ["dom", "es6"],
+    "baseUrl": "./lib",
+  },
+  "exclude": ["node_modules"],
+  "include": ["./lib/**/*.ts"],
+}
