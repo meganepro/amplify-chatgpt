@@ -15,15 +15,6 @@
     },
     "s3Key": {
       "Type": "String"
-    },
-    "channelAccessToken": {
-      "Type": "String"
-    },
-    "channelSecret": {
-      "Type": "String"
-    },
-    "openaiApiKey": {
-      "Type": "String"
     }
   },
   "Conditions": {
@@ -78,15 +69,6 @@
             },
             "REGION": {
               "Ref": "AWS::Region"
-            },
-            "CHANNEL_ACCESS_TOKEN": {
-              "Ref": "channelAccessToken"
-            },
-            "CHANNEL_SECRET": {
-              "Ref": "channelSecret"
-            },
-            "OPENAI_API_KEY": {
-              "Ref": "openaiApiKey"
             }
           }
         },
