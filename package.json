@@ -14,7 +14,7 @@
     "prepare": "husky install",
     "git-hooks:pre-commit": "lint-staged --allow-empty --config .lintstagedrc.js && tsc --noEmit",
     "git-hooks:pre-push": "next build",
-    "amplify:ChatGptApiFunction": "cd amplify/backend/function/ChatGptApiFunction/ && npm run build"
+    "amplify:ChatGptApiFunction": "cd amplify/backend/function/ChatGptApiFunction/ && npm ci && npm run build"
   },
   "lint-staged": {
     "./src/**/*.{ts,js,jsx,tsx}": [

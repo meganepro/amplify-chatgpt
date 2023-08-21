@@ -1,0 +1,18 @@
+{
+  "main": {
+    "awscloudformation": {
+    },
+    "categories": {
+      "function": {
+        "ChatGptApiFunction": {
+          "channelAccessToken": "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
+          "channelSecret": "xxxxxxxxxxxxxxxxxxxx",
+          "openaiApiKey": "change-me"
+        }
+      },
+      "api": {
+        "ChatGptApi": {}
+      }
+    }
+  }
+}
